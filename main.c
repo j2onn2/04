@@ -5,12 +5,13 @@
 
 int main(int argc, char *argv[]) {
 	
-	int x ;
+	int x, y ;
 	
-	printf("input the second : ");
+	printf("input the year : ");
 	scanf("%i", &x) ;
 	
-	printf("the time is %i : %i\n", x/60, x%60) ;
+	y= ((x%4 == 0) && (x % 100 !=0)) || (x % 400 ==0);
+	printf("is the year %i the leap year? : %i\n", x, y) ;
 	
 	
 	return 0;
